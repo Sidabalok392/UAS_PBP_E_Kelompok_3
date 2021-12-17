@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EASY LEARNING</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiY2FuZHJhMzkyIiwiYSI6ImNrdXBjdWY1dzA2am8ydnF2cmJoMm1pdGIifQ.CuMaZWUZ-Og4cLXyFG4ROA</string>
+    <string name="user_location_permission_explanation">Apakah diperbolehkan</string>
+    <string name="user_location_permission_not_granted">Ditolak Kalian Semua</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

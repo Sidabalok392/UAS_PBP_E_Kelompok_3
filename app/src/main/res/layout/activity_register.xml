@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView_register"
+            android:layout_width="131dp"
+            android:layout_height="131dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="11dp"
+            app:srcCompat="@drawable/easy_learning" />
+
+        <EditText
+            android:id="@+id/et_nama_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="7dp"
+            android:ems="10"
+            android:hint="Nama"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_telepon_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="7dp"
+            android:ems="10"
+            android:hint="Telepon"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et_umur_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="7dp"
+            android:ems="10"
+            android:hint="Umur"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et_email_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="7dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="#00000000"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp">
+
+            <EditText
+                android:id="@+id/et_password_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="7dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btn_eye_register"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/ic_baseline_visibility_off_24" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/linear2_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_login_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="7dp"
+                android:layout_weight="1"
+                android:backgroundTint="#EAE2B5"
+                android:insetLeft="6dp"
+                android:insetRight="6dp"
+                android:text="Cancel"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btn_register_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="7dp"
+                android:layout_weight="1"
+                android:backgroundTint="#33C1ED"
+                android:insetLeft="6dp"
+                android:insetRight="6dp"
+                android:text="Register"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

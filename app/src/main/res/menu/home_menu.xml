@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/live"
+        android:icon="@drawable/ic_baseline_live_tv_24"
+        android:title="Live Sessions" />
+    <item
+        android:id="@+id/profil"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profil" />
+</menu>

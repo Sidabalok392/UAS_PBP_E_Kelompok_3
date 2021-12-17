@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".AddEditCourseActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/ll_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title_course"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Tambah Course" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_gambar_course"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title_course">
+
+                <ImageView
+                    android:id="@+id/iv_gambar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_image" />
+
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/et_nama_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginBottom="11dp"
+                android:ems="10"
+                android:hint="Nama"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/et_kode_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginBottom="11dp"
+                android:ems="10"
+                android:hint="Kode"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/et_deskripsi_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginBottom="11dp"
+                android:ems="10"
+                android:hint="Deskripsi"
+                android:inputType="textPersonName" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_cancel_course"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Batal" />
+
+        <Button
+            android:id="@+id/btn_save_course"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Simpan" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_loading"
+        layout="@layout/layout_loading"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
